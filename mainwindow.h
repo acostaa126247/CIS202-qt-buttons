@@ -14,11 +14,16 @@ public:
     explicit MainWindow(QWidget *parent = 0);
 
 public slots:
-    void onbutton1Press();
-
+    void onbutton1Press(bool toggled);
+    void onbutton2Press(bool toggled);
+    void onbutton3Press(bool toggled);
 private:
-    QPushButton *button1;
-    QLabel *label1;
+    QPushButton* button1;
+    QPushButton* button2;
+    QPushButton* button3;
+    QLabel* label1;
+    QLabel* label2;
+    QLabel* label3;
 
 };
 
